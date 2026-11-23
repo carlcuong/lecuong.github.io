@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio cá nhân - giới thiệu, kỹ năng và liên hệ.">
+  <title>Portfolio | Lê Chí Cường</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Điều hướng chính">
+      <a class="logo" href="index.html">MyPortfolio<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a class="active" href="index.html">Trang chủ</a>
+        <a href="projects.html">Projects</a>
+        <a href="#contact">Liên hệ</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Bật/tắt giao diện tối">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">XIN CHÀO, MÌNH LÀ</p>
+        <h1>Lê Chí Cường</h1>
+        <h2>Sinh viên Công nghệ thông tin</h2>
+        <p class="intro">Mình yêu thích thiết kế và phát triển website. Mục tiêu của mình là xây dựng những sản phẩm web hữu ích, dễ sử dụng và có giao diện thân thiện trên mọi thiết bị.</p>
+        <div class="hero-actions">
+          <a class="button" href="projects.html">Xem dự án</a>
+          <a class="button button-outline" href="#contact">Liên hệ với mình</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <img src="images/avatar.jpg" alt="Ảnh đại diện minh họa">
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">GIỚI THIỆU</p>
+          <h2>Một chút về mình</h2>
+        </div>
+        <div class="about-grid">
+          <article class="info-card reveal">
+            <h3>Học vấn</h3>
+            <p>Sinh viên ngành Công nghệ thông tin. Đang học và thực hành HTML, CSS, JavaScript, cơ sở dữ liệu và mạng máy tính.</p>
+          </article>
+          <article class="info-card reveal">
+            <h3>Kỹ năng</h3>
+            <p>HTML5, CSS3, JavaScript cơ bản, thiết kế responsive, Git và GitHub.</p>
+          </article>
+          <article class="info-card reveal">
+            <h3>Mục tiêu</h3>
+            <p>Không ngừng học hỏi, cải thiện tư duy lập trình và tích lũy kinh nghiệm qua các dự án thực tế.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading reveal">
+        <p class="eyebrow">SẢN PHẨM</p>
+        <h2>Dự án nổi bật</h2>
+        <p>Một số bài tập và sản phẩm mình đã thực hiện.</p>
+      </div>
+      <div class="featured-grid">
+        <article class="project-card reveal"><div class="project-art art-one">HTML</div><div class="project-content"><h3>Website giới thiệu</h3><p>Trang web giới thiệu bản thân sử dụng HTML và CSS.</p></div></article>
+        <article class="project-card reveal"><div class="project-art art-two">JS</div><div class="project-content"><h3>Ứng dụng tiện ích</h3><p>Ứng dụng nhỏ thực hành JavaScript và thao tác DOM.</p></div></article>
+        <article class="project-card reveal"><div class="project-art art-three">UI</div><div class="project-content"><h3>Giao diện responsive</h3><p>Bố cục website tự điều chỉnh theo kích thước màn hình.</p></div></article>
+      </div>
+      <div class="center-action"><a class="text-link" href="projects.html">Xem tất cả 6 dự án →</a></div>
+    </section>
+
+    <section class="section section-soft" id="contact">
+      <div class="container contact-layout">
+        <div class="reveal">
+          <p class="eyebrow">KẾT NỐI</p>
+          <h2>Liên hệ với mình</h2>
+          <p>Nếu bạn muốn trao đổi về học tập hoặc dự án, hãy gửi lời nhắn qua biểu mẫu.</p>
+          <p class="contact-note">Email: example@gmail.com</p>
+        </div>
+        <form class="contact-form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <label for="name">Họ và tên</label>
+          <input id="name" name="name" type="text" placeholder="Nhập họ tên" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="name@example.com" required>
+          <label for="message">Nội dung</label>
+          <textarea id="message" name="message" rows="5" placeholder="Bạn muốn nhắn gì?" required></textarea>
+          <button class="button" type="submit">Gửi liên hệ</button>
+          <small>Trước khi sử dụng, hãy thay YOUR_FORM_ID bằng mã form nhận được từ Formspree.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><p>© 2026 Nguyễn Văn A. Portfolio cá nhân.</p><a href="#top">Lên đầu trang ↑</a></div>
+  </footer>
+</body>
+</html>
